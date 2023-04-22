@@ -37,6 +37,7 @@ function onStart() {
   start.disabled = true;
 
   const countdownInterval = setInterval(() => {
+    const currentDate = new Date();
     const timeDifference = selectedDate - currentDate;
 
     if (timeDifference <= 0) {
