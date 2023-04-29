@@ -19,10 +19,12 @@ function changingColor() {
 
   if (intervalId) {
     start.disabled = true;
+    stop.disabled = false;
   }
 }
 
 function stopChangingColor() {
   start.disabled = false;
+  stop.disabled = true;
   clearInterval(intervalId);
 }

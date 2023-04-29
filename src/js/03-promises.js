@@ -2,6 +2,7 @@ import Notiflix from 'notiflix';
 import 'notiflix/dist/notiflix-3.2.6.min.css';
 
 const form = document.querySelector('.form');
+const button = form.querySelector('button');
 
 function createPromise(position, delay) {
   return new Promise((resolve, reject) => {
@@ -43,4 +44,5 @@ function onSubmit(event) {
         );
       });
   }
+  form.reset();
 }
